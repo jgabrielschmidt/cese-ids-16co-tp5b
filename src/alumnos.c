@@ -31,8 +31,14 @@ static const struct alumno_s ESTEBAN_VOLENTINI = {
     .documento = "23.517.968",
 };
 
+static const struct alumno_s JORGE_SCHMIDT = {
+    .apellidos = "SCHMIDT",
+    .nombres = "Jorge Gabriel",
+    .documento = "31.954.173",
+};
+
 const alumno_t ALUMNOS[] = {
-    &ESTEBAN_VOLENTINI,
+    &ESTEBAN_VOLENTINI, &JORGE_SCHMIDT,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
