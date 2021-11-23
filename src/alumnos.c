@@ -24,24 +24,36 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
-
+/**
+ * @brief Estructura con los datos del alumno ESTEBAN_VOLENTINI
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
-
+/**
+ * @brief Estructura con los datos del alumno JORGE_SCHMIDT
+ * 
+ */
 static const struct alumno_s JORGE_SCHMIDT = {
     .apellidos = "SCHMIDT",
     .nombres = "Jorge Gabriel",
     .documento = "31.954.173",
 };
-
+/**
+ * @brief Estructura con las estructuras de cada alumno
+ * 
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI, 
     &JORGE_SCHMIDT,
 };
-
+/**
+ * @brief Constante utilizada para determinar la cantidad de alumnos
+ * 
+ */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
